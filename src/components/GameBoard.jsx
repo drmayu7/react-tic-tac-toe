@@ -6,7 +6,6 @@ const initialGameBoard = [
     [null, null, null],
 ]; // object to represent the game board
 
-
 export default function GameBoard() {
     const [gameBoard, setGameBoard] = useState(initialGameBoard)
 
