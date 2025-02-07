@@ -4,7 +4,7 @@ const initialGameBoard = [
     [null, null, null],
     [null, null, null],
     [null, null, null],
-];
+]; // object to represent the game board
 
 
 export default function GameBoard() {
