@@ -24,7 +24,7 @@ function App() {
     const [gameTurns,setGameTurns]=useState([]);
     const activePlayer = deriveActivePlayer(gameTurns);
 
-    let gameBoard = initialGameBoard;
+    let gameBoard = [...initialGameBoard.map(array=> [...array])]; // Create a copy of the initial game board in the memory to handle bug
 
     for (const turn of gameTurns){
         const { square,player } = turn;
